@@ -30,4 +30,12 @@ To get the REST API up and running on your dev machine:
 Both applications (client and server) must be running on different ports
 
 Running the server
-1. git clone 
+1. git clone https://github.com/vicjuma/tech-challenge-master.git
+2. cd tech-challenge-master/server
+3. npm install
+4. nodemon (install globally npm install -g nodemon)
+
+Running the server
+1. cd tech-challenge-master/client
+2. yarn
+3. yarn start
