@@ -3,6 +3,7 @@ import ChoiceContainer from './ChoiceContainer';
 import '../styles/choices.css';
 
 class ChoicesContainer extends React.Component{
+
     render(){
         return (
             <div className="optionsContainer">

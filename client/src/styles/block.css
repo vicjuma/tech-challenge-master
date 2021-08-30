@@ -9,6 +9,7 @@
     box-shadow: 0 0.4em 1.2em 0.2em rgba(0,0,0,.05);
     margin-bottom: 12.5%;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .submitButton {

@@ -18,7 +18,6 @@ const CheckBlockContainer = (props) => {
     const [choice, setChoice] = useState(null);
 
     const isCorrectChoice = choice === answer[0].id;
-
     /**
      * Reset Quiz
      */
