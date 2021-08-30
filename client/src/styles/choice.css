@@ -2,7 +2,6 @@
     cursor: pointer;
     padding: 2em 1em;
     position: relative;
-    border: 1px solid #747a7e;
 }
 
 .optionWrapper:focus {
@@ -57,7 +56,6 @@
 
 .optionWrapper input:checked {
     opacity: 1;
-    border: red 1px solid;
 }
 
 .optionWrapper .radioInput:not(.submitted):after {

@@ -4,25 +4,13 @@ import '../styles/choice.css';
 import $ from 'jquery';
 
 class ChoiceContainer extends React.Component {
-    checkSubmit = () => this.props.isSubmitted ? null : this.props.changeChoice(this.props.answer.id)
-    handleClick = () => {
-        let checkBoxes = $("input[type=radio\\[\\]]");
-        checkBoxes.prop("checked", !checkBoxes.prop("checked"));
-        $("input:checked").closest("div").trigger("click").css({
-            "color": "green",
-            "border": "2px solid green"
-        })
-     }
-    func = () => {
-        this.checkSubmit()
-        this.handleClick()
-    }     
+    checkSubmit = () => this.props.isSubmitted ? null : this.props.changeChoice(this.props.answer.id)   
     render(){
         console.log(this.props.userChoice)
         return (
             <div
                 className={`optionWrapper${this.props.isSubmitted ? ' disabled' : ''}`}
-                onClick={this.func}
+                onClick={this.checkSubmit}
                 role="button"
                 tabIndex={0}
                 answer-checked={`is${this.props.userChoice ? true : false}`}
