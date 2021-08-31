@@ -1,20 +1,19 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import '../styles/choice.css';
-import $ from 'jquery';
 
 class ChoiceContainer extends React.Component {
     checkSubmit = () => this.props.isSubmitted ? null : this.props.changeChoice(this.props.answer.id)   
     render(){
-        console.log(this.props.userChoice)
         return (
             <div
                 className={`optionWrapper${this.props.isSubmitted ? ' disabled' : ''}`}
                 onClick={this.checkSubmit}
                 role="button"
                 tabIndex={0}
-                answer-checked={`is${this.props.userChoice ? true : false}`}
-                id={`radioInput${this.props.isCorrect ? 'submitted' : 'not'}`}
+                data-chosen-answer={this.props.isCorrect}
+                id={`radioInput${this.props.isSubmitted ? 'submitted' : ''}`}
+                
             >
                 <label>
                     <input

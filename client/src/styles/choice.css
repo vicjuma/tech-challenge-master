@@ -54,9 +54,6 @@
     opacity: 1;
 }
 
-.optionWrapper input:checked {
-    opacity: 1;
-}
 
 .optionWrapper .radioInput:not(.submitted):after {
     content: "";
@@ -90,6 +87,10 @@
 
 .optionWrapper .radioInput.submitted[data-correct-answer="true"]:after {
     content: url('../images/checkmark.svg');
+}
+
+#radioInputsubmitted[data-chosen-answer="true"] {
+    border: 2px solid #747a7e;
 }
 
 .optionWrapper .radioInput.submitted[data-correct-answer="false"]:after {
